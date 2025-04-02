@@ -15,4 +15,9 @@ public class ConvertTest extends TestCase {
         assertEquals(60.0, result, 0.01); // Expected result: $60.0
     }
 
+    @Test
+    public void testDollarToNaira() {
+        double result = Convert.now("USD", "NGN", 1);
+        assertEquals(830.0, result, 0.01); // Expected result: 830 NGN
+    }
 }
